@@ -1,0 +1,49 @@
+.indexred {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    width: 100%;
+    max-width: 165vh;
+}
+
+/* ✅ Extra Small Devices (Phones, 0px to 576px) */
+@media (max-width: 576px) {
+    .indexred {
+        width: 90vw;
+        max-width: 100%;
+    }
+}
+
+/* ✅ Small Devices (Portrait tablets and large phones, 577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .indexred {
+        width: 95vw;
+        max-width: 100%;
+    }
+}
+
+/* ✅ Medium Devices (Tablets, 769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .indexred {
+        width: 90vw;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+}
+
+/* ✅ Large Devices (Desktops, 993px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .indexred {
+        width: 140vh;
+        padding: 12px;
+        max-width: 100%;
+    }
+}
+
+/* ✅ Extra Large Devices (Large desktops, 1201px and up) */
+@media (min-width: 1201px) {
+    .indexred {
+        width: 165vh;
+        margin: 0 auto;
+        padding: 18px;
+    }
+}
