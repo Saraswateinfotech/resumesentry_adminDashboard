@@ -40,7 +40,7 @@
 //   //   const fetchResumeStats = async () => {
 //   //     try {
 //   //       const response = await fetch(
-//   //         "https://apis.resumesentry.com/resumes/GetResumeReportForAdmin",
+//   //         "https://resumeentry-bend.onrender.com/resumes/GetResumeReportForAdmin",
 //   //         {
 //   //           method: "GET",
 //   //           headers: {
@@ -80,7 +80,7 @@
 //       setLoading(true); // Set loading to true when making the request
 //       try {
 //         const response = await fetch(
-//           "https://apis.resumesentry.com/resumes/GetResumeReportForAdmin",
+//           "https://resumeentry-bend.onrender.com/resumes/GetResumeReportForAdmin",
 //           {
 //             method: "GET",
 //             headers: {
@@ -270,7 +270,7 @@ const ECommerce: React.FC = () => {
       setLoading(true); // Set loading to true when making the request
       try {
         const response = await fetch(
-          "https://apis.resumesentry.com/resumes/GetResumeReportForAdmin",
+          "https://resumeentry-bend.onrender.com/resumes/GetResumeReportForAdmin",
           {
             method: "GET",
             headers: {

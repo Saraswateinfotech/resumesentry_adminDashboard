@@ -222,7 +222,7 @@ const columns = [
         try {
           // Call the API to update the status
           await axios.put(
-            `https://apis.resumesentry.com/freelancer/${user_id}/status`,
+            `https://resumeentry-bend.onrender.com/freelancer/${user_id}/status`,
             { is_active: updatedState ? 1 : 0 },
             {
               headers: {
@@ -341,7 +341,7 @@ const Users = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          "https://apis.resumesentry.com/freelancer",
+          "https://resumeentry-bend.onrender.com/freelancer",
           {
             headers: {
               Authorization: `Bearer ${token}`,

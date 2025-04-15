@@ -81,7 +81,7 @@
 //       setError("");
 //       try {
 //         const token = localStorage.getItem("token"); // Get the token from local storage
-//         const response = await axios.get(`https://apis.resumesentry.com/resumes/getBankDetails/${freelancerId}`, {
+//         const response = await axios.get(`https://resumeentry-bend.onrender.com/resumes/getBankDetails/${freelancerId}`, {
 //           headers: {
 //             Authorization: `Bearer ${token}`, // Include the token in the header
 //           },
@@ -176,7 +176,7 @@
 //       try {
 //         const token = localStorage.getItem("token");
 //         const response = await axios.get(
-//           `https://apis.resumesentry.com/resumes/getBankDetails/${freelancers_id}`,
+//           `https://resumeentry-bend.onrender.com/resumes/getBankDetails/${freelancers_id}`,
 //           {
 //             headers: { Authorization: `Bearer ${token}` },
 //           }
@@ -280,7 +280,7 @@
 //         console.log("Fetching details for ID:", freelancers_id); // Debug ID
 
 //         const response = await axios.get(
-//           `https://apis.resumesentry.com/resumes/getBankDetails/${freelancers_id}`,
+//           `https://resumeentry-bend.onrender.com/resumes/getBankDetails/${freelancers_id}`,
 //           {
 //             headers: { Authorization: `Bearer ${token}` },
 //           }
@@ -399,7 +399,7 @@ const BankDetailsModal = ({ open, onClose, freelancers_id }) => {
         console.log("Fetching details for ID:", freelancers_id); // Debug ID
 
         const response = await axios.get(
-          `https://apis.resumesentry.com/resumes/getBankDetails/${freelancers_id}`,
+          `https://resumeentry-bend.onrender.com/resumes/getBankDetails/${freelancers_id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }

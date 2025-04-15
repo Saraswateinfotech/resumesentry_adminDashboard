@@ -24,7 +24,7 @@ const UploadResume: React.FC = () => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        "https://apis.resumesentry.com/resumes/all",
+        "https://resumeentry-bend.onrender.com/resumes/all",
         {
           method: "GET",
           headers: {
@@ -88,7 +88,7 @@ const UploadResume: React.FC = () => {
 
     try {
       const response = await fetch(
-        "https://apis.resumesentry.com/resumes/bulk-upload",
+        "https://resumeentry-bend.onrender.com/resumes/bulk-upload",
         {
           method: "POST",
           body: formData,

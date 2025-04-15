@@ -279,7 +279,7 @@ const [selectedFreelancers, setSelectedFreelancers] = useState<Freelancer[]>([])
       }
 
       const response = await fetch(
-        "https://apis.resumesentry.com/resumes/reassignResume",
+        "https://resumeentry-bend.onrender.com/resumes/reassignResume",
         {
           method: "POST",
           headers: {
@@ -319,7 +319,7 @@ const [selectedFreelancers, setSelectedFreelancers] = useState<Freelancer[]>([])
 
         const response = await axios.get<{
           freelancers: { freelancer_id: string; user_id: string; name: string }[];
-        }>("https://apis.resumesentry.com/freelancer", {
+        }>("https://resumeentry-bend.onrender.com/freelancer", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -440,7 +440,7 @@ const [selectedFreelancers, setSelectedFreelancers] = useState<Freelancer[]>([])
       setLoading(true);
       const response = await axios.get<{
         submittedResumes: Resume[];
-      }>("https://apis.resumesentry.com/resumes/getAllCompletedResumes", {
+      }>("https://resumeentry-bend.onrender.com/resumes/getAllCompletedResumes", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -494,7 +494,7 @@ const [selectedFreelancers, setSelectedFreelancers] = useState<Freelancer[]>([])
     };
           try {
             const response = await fetch(
-              "https://apis.resumesentry.com/resumes/updateResumeStatus",
+              "https://resumeentry-bend.onrender.com/resumes/updateResumeStatus",
               {
                 method: "POST",
                 headers: {

@@ -67,7 +67,7 @@ const StartDateModal = ({ open, onClose, freelancers_id, allData }) => {
 
     try {
       const response = await fetch(
-        `https://apis.resumesentry.com/freelancer/${freelancers_id}/edit`,
+        `https://resumeentry-bend.onrender.com/freelancer/${freelancers_id}/edit`,
         {
           method: "PUT",
           headers: {

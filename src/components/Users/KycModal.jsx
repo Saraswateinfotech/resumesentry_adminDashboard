@@ -32,7 +32,7 @@
 //       setDocumentURL("");
 
 //       try {
-//         const url = `https://apis.resumesentry.com/resumes/downloadAadharCard/${freelancers_id}`;
+//         const url = `https://resumeentry-bend.onrender.com/resumes/downloadAadharCard/${freelancers_id}`;
 //         const response = await fetch(url);
 
 //         if (!response.ok) {
@@ -65,7 +65,7 @@
 
 //     try {
 //       const response = await fetch(
-//         "https://apis.resumesentry.com/resumes/updateApprovalStatus",
+//         "https://resumeentry-bend.onrender.com/resumes/updateApprovalStatus",
 //         {
 //           method: "POST",
 //           headers: {
@@ -201,7 +201,7 @@ const KycModal = ({ open, onClose, freelancers_id, allData }) => {
       setDocumentURL("");
 
       try {
-        const url = `https://apis.resumesentry.com/resumes/downloadAadharCard/${freelancers_id}`;
+        const url = `https://resumeentry-bend.onrender.com/resumes/downloadAadharCard/${freelancers_id}`;
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -230,7 +230,7 @@ const KycModal = ({ open, onClose, freelancers_id, allData }) => {
       setDocumentURLs("");
 
       try {
-        const url = `https://apis.resumesentry.com/resumes/downloadAddressCard/${freelancers_id}`;
+        const url = `https://resumeentry-bend.onrender.com/resumes/downloadAddressCard/${freelancers_id}`;
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -264,7 +264,7 @@ const KycModal = ({ open, onClose, freelancers_id, allData }) => {
 
     try {
       const response = await fetch(
-        "https://apis.resumesentry.com/resumes/updateApprovalStatus",
+        "https://resumeentry-bend.onrender.com/resumes/updateApprovalStatus",
         {
           method: "POST",
           headers: {
